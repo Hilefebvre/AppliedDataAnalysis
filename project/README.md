@@ -16,7 +16,7 @@ In a time where ressources are diminishing and population is growing, the theme 
 The dataset provided by Le Temps gathering 200 years of newspapers archives is a mine of information on society’s interests trends over the time. We want to explore it with our prism regarding sustainable development and provide an analysis on this topic’s vision and evolution over the time. When did we start to talk about sustainable development? It was certainly not mentioned in those terms at the time, what did set the stage to this matter? This dataset is wide and gives us the opportunity to explore a lot of data. First of all, we intend to focus on the last 100 years of archives because we consider that prior to that time, there is not much to find on these problematics in the newspaper. Le Temps archives website enables us to explore the data and research information by name entities. Indeed, when typing the term sustainable development, a graphic is displayed showing the occurrences of this term and not much is found in the 19th century. Secondly, we intend to focus on newspaper articles titles to explore the data. We think that titles reveals the spirit of an article enough to extract consistent information from it only. Also it will in a way, reduce our amount of data and make it easier for us to process and analyze it at first. 
 At this stage of the project, we have not played around enough with the dataset to give more explanation on the way we are certain to analyze the data. For now, we have focused, as stated above, on delimiting the amount of data we want to consider of our analysis.
 
-#Schedule
+# Schedule
 The schedule for the projects is as follows:
 
 - Oct. 19, 2017: datasets for projects are announced.
