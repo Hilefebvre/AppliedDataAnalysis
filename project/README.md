@@ -57,7 +57,7 @@ As indicated above, a challenge will be to expand our matching list and to find 
 
 Once the pre-processing will be considered optimal we have two main objectives:
 
-- We want to learn in which context we used to talk about ecology at the time and we want to know how these articles are related to other subjects. Thus, we want to apply some machine learning algorithms to the selected ecology friendly articles by retrieving the full articles text and try to learn the context of the articles by finding out to which subjects these articles were related. (This will be done in the same spirit as in HW 4)
+- We want to learn in which context we used to talk about ecology at the time and we want to know how these articles are related to other subjects. Thus, we want to apply some machine learning algorithms to the selected ecology friendly articles by retrieving the full articles text and try to learn the context of the articles by finding out to which subjects these articles were related (economy? politics?, etc...). (This will be done in the same spirit as in HW 4)
 
 - As a wish to implement techniques we have seen in class, we also thought of displaying a map gathering occurences counts per canton even though we are aware that the two newspapers were local newspapers (Geneva and Lausanne) and for some neighbor countries such as France, Germany or Italy. 
 
