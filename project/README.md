@@ -24,7 +24,7 @@ At this stage of the project, we have not played around enough with the dataset 
 # A list of internal milestones 
 
 
-###Milestone 1
+### Milestone 1
 
 Get the data of the 2 newspapers (Journal de Genève and Gazette de Lausanne), predecessors to Le Temps, and start exploring it using Pandas in an IPython notebook.
 
@@ -37,7 +37,7 @@ Update the notebook with a more structured and informed time plan for what comes
 
 
 
-###Milestone 2
+### Milestone 2
 
 For this second milestone we had as a main goal to perform a first exploration of our data and identify some trends that we will need to analyze for Milestone 3. We also considered this milestone as a step to settle or not our project ideas and identify the possible constraints. We expressed in our TA questions of milestone 1 the question of using 100 or 200 years of data and decided to take the last 100 years as recommended. So we ran our first analysis as followed:
 
@@ -64,12 +64,12 @@ Once the pre-processing will be considered optimal we have two main objectives:
 # Questions for TAs
 
 
-###Milestone 1
+### Milestone 1
 - We saw that data are heavy, and available on the cluster. Do we need a VPN to access it ? 
 
 - Would you recommend study the 200 years and then potentially keep only the last 100 ? Or directly work on the last 100 ?
 
-###Milestone 2
+### Milestone 2
 
 - Using only the articles titles seems a bit biased to us to really identify articles dealing with sustainable content. Would you recommend processing all the articles content even though it will be highly computer consuming ? We believe that on more than 2 million articles, this may not be necessary because our dataset is huge. 
 
