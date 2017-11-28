@@ -16,7 +16,13 @@ In a time where ressources are diminishing and population is growing, the theme 
 The dataset provided by Le Temps gathers 200 years of newspapers archives is a mine of information on society’s interests trends over the time. We want to explore it with our prism regarding sustainable development and provide an analysis on this topic’s vision and evolution over the time. When did we start to talk about sustainable development? It was certainly not mentioned in those terms at the time, what did set the stage to this matter? This dataset is wide and gives us the opportunity to explore a lot of data. First of all, we intend to focus on the last 100 years of archives because we consider that prior to that time, there is not much to find on these problematics in the newspaper. Le Temps archives website enables us to explore the data and research information by name entities. Indeed, when typing the term sustainable development, a graphic is displayed showing the occurrences of this term and not much is found in the 19th century. Secondly, we intend to focus on newspaper articles titles to explore the data. We think that titles reveals the spirit of an article enough to extract consistent information from it only. Also it will in a way, reduce our amount of data and make it easier for us to process and analyze it at first. 
 At this stage of the project, we have not played around enough with the dataset to give more explanation on the way we are certain to analyze the data. For now, we have focused, as stated above, on delimiting the amount of data we want to consider of our analysis.
 
-# A list of internal milestones up until project milestone 2
+
+
+
+# A list of internal milestones 
+
+
+###Milestone 1
 
 Get the data of the 2 newspapers (Journal de Genève and Gazette de Lausanne), predecessors to Le Temps, and start exploring it using Pandas in an IPython notebook.
 
@@ -28,10 +34,40 @@ Fill the project repo with a notebook containing data collection and descriptive
 Update the notebook with a more structured and informed time plan for what comes next (till the presentation).
 
 
+
+###Milestone 2
+
+For this second milestone we had as goal to perform a first exploration of our data and identify some trends than we will need to analyse for Milestone 3. We also considered this milestone as a step to settle or not our project idea and identify the possible constraints. We expressed in our TA questions of milestone 1 the question of using 100 or 200 years of data and decided to take the last 100 years as recommended. So we ran our first analysis as following:`
+
+- We loaded  the data of the 2 newspapers (Journal de Genève and Gazette de Lausanne)and started and processed it to obtain clean and useable dataset. Indeed, there were under XML format so we used beautiful soup parser to extract the data. The final purpose was to get the dataset with two columns each : articles names and date. We obtained the two datasets containing each more than 2 millions article.
+
+- Using pandas, and after some format conversion, we created two data frames corresponding to each newspaper.
+
+- We wanted to know when the public sphere got interested into the environnement related subjects. So as a first simple analysis, we went through all article titles and tried to see if the terms "environnement" and "écologie" were frequently expressed during the XXth century. It resulted in the creation of data frames with only the rows of articles mentioning theses terms. For name matching we used "str.contains" method.
+
+As a results we displayed we plotted a countplot with the number of articles per year and see than the number of matched articles are the highest between 1985 ad 1990. This results seem coherent at first sight because sustainable development and green concerns were discussed a lot during eighties. Results are pretty the same for both newspapers.
+
+But we definitely need to expand our matching vocabulary list because currently with our methods scanning for "écologie" we also get words like "gynécologie". Moreover we need to pay attention to words such as "environment" that can mean different things (such as cultural environment, social environment etc..)
+
+As a second step after having tried our expanded list, and if the results seem to be still perfectible, we consider scanning directly in each article but this will be highly computer consuming.
+
+As indicated above, a challenge will be to expand our matching list and to find out if it exists some more powerful matching function. Why not Sequence matcher we used for HW2 ?
+
+As a wish to implement techniques we have seen in class, we thought about displaying a map gathering counts per canton even though we are aware that the two newspaper were local newspaper (Geneva and Lausanne)and for some neighbor countries such as France, Germany or Italy.
+
+Eventually, we aim at using some machine learning techniques to extract useful information from our datasets.
+
+
+
 # Questions for TAs
 
+
+###Milestone 1
 - We saw that data are heavy, and available on the cluster. Do we need a VPN to access it ? 
 
 - Would you recommend study the 200 years and then potentially keep only the last 100 ? Or directly work on the last 100 ?
 
+###Milestone 2
+
+- Using only on title seems a bit light to us to really identify articles dealing with sustainable content. Would you recommend processing all the article contents as a tradeoff between results and computer consuming ? We believe that on more than 2 millions articles, this may be not necessary because our sample is huge.
 
