@@ -61,6 +61,36 @@ Once the pre-processing will be considered optimal we have two main objectives:
 
 - As a wish to implement techniques we have seen in class, we also thought of displaying a map gathering occurences counts per canton even though we are aware that the two newspapers were local newspapers (Geneva and Lausanne) and for some neighbor countries such as France, Germany or Italy. 
 
+
+### Milestone 3
+
+
+
+Following the comments of the TA, we established at first a list of almost 200 key words from the ecological lexical. We decided to limit ourselves with only 21 words because many of them were words not specific to our theme such as "environment". The words retained are the following:
+
+’agriculture durable’, ’biodiversité’,’biodégradable’, ’biomasse’, ’biotope’, ’biozone’,’changement climatique’, ’climax’,’compostage’,’diversité’, biologique’, ’déforestation’, ’environnement’,’environnemental’, ’espace vert’, ’gaz à effet de serre’, ’micro-climat’, ’reboisement’,’réchauffement climatique’, ’réchauffement global’, 'écologie', 'écotaxe'
+
+This time we used "re" package and its search fonction to match fully words and avoid mistakes such as "écologie/gynécologie" we got previously and extracted the matched words.
+
+Regarding the numerous untitled articles, we noticed that most of the time main subject appeared at the beginning of the article content so we matched our list of words with the 50 first characters of each untitled article with pretty good results. We noticed that the two main represented words were "environnement" and "écologie" which was expected. What's interesting is that these two words distributions in the two journals are really close. This may indicate that ecology is covered by the two journal the same way which would not be unreasonable since the two newspaper should cover the same local news due to their proximity.
+
+
+As a result, we displayed the distribution of articles containing green content for each newspaper and noticed that they were very close too. The period that is the most concerned about those subjects seem to be 1982-1992 which would coincide with global green awareness and with some ecological disaster (such as Tchernobyl).
+
+
+
+
+Regarding work split, we did as following:
+
+- Mathilde Guillaumot: Matching with untitled articles and topic modeling. Mastered the report.
+
+- Priscille Guerrier de Dumast:
+
+- Hippolyte Lefebvre: Selection and processing of keywords and full list matching with the two datasets with extraction of match words.
+
+
+
+
 # Questions for TAs
 
 
