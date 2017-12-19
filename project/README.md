@@ -66,25 +66,21 @@ Once the pre-processing will be considered optimal we have two main objectives:
 
 
 
-Following the comments of the TA, we established at first a list of almost 200 key words from the ecological lexical. We decided to limit ourselves with only 21 words because many of them were words not specific to our theme such as "environment". The words retained are the following:
+Following the comments of the TA, we established at first a list of almost 200 key words from the ecological lexical. We decided to limit ourselves with only 58 words because of the amount of data to process and the rarity of their use in the french language. 21 words out of these 58 ones were retrieved in one or both of the journals (GDL and JDG):
 
 ’agriculture durable’, ’biodiversité’,’biodégradable’, ’biomasse’, ’biotope’, ’biozone’,’changement climatique’, ’climax’,’compostage’,’diversité’, biologique’, ’déforestation’, ’environnement’,’environnemental’, ’espace vert’, ’gaz à effet de serre’, ’micro-climat’, ’reboisement’,’réchauffement climatique’, ’réchauffement global’, 'écologie', 'écotaxe'
 
-This time we used "re" package and its search fonction to match fully words and avoid mistakes such as "écologie/gynécologie" we got previously and extracted the matched words.
+This time we used the "re" package and its search fonction to fully match words and avoid mistakes such as "écologie/gynécologie" like we got previously. After what, we extracted the articles matching one of the "green" words.
 
-Regarding the numerous untitled articles, we noticed that most of the time main subject appeared at the beginning of the article content so we matched our list of words with the 50 first characters of each untitled article with pretty good results. We noticed that the two main represented words were "environnement" and "écologie" which was expected. What's interesting is that these two words distributions in the two journals are really close. This may indicate that ecology is covered by the two journal the same way which would not be unreasonable since the two newspaper should cover the same local news due to their proximity.
+Regarding the amount of untitled articles, we could not just drop them from our dataset. Fortunately, it appeared that very frequently the main topic treated in the article was mentioned at the very beginning of the article content so we matched our list of words with the 100 first characters of each untitled articles with pretty good results even so only less than 100 hundred articles for each journal were retrieved it is always articles that needed to be present in our processed dataset despite missing a title. We noticed that the two main represented words were "environnement" and "écologie" which could be expected. What's interesting is that these two words distributions in the two journals are really similar. This may indicate that ecology is covered by the two journal in the same way which is not unreasonable since the two newspapers should cover the same local news due to their proximity.
 
-
-As a result, we displayed the distribution of articles containing green content for each newspaper and noticed that they were very close too. The period that is the most concerned about those subjects seem to be 1982-1992 which would coincide with global green awareness and with some ecological disaster (such as Tchernobyl).
-
-
-
+The time period that is mostly concerned with these "green" subjects seem to be 1982-1992 which would coincide with global green awareness and with some ecological disaster (such as Tchernobyl).
 
 Regarding work split, we did as following:
 
-- Mathilde Guillaumot: Matching with untitled articles and topic modeling. Mastered the report.
+- Mathilde Guillaumot: Data pre-processing, Handling of untitled articles, Green articles extraction, Topic modeling, Mastered the report.
 
-- Priscille Guerrier de Dumast:
+- Priscille Guerrier de Dumast: "green" words matching list and means to retrieve green articles
 
 - Hippolyte Lefebvre: Selection and processing of keywords and full list matching with the two datasets with extraction of match words.
 
