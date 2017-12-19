@@ -94,7 +94,7 @@ Topic modeling has enable us to portray what were the association between topics
 
 Regarding work split, we did as following:
 
-- Mathilde Guillaumot: Data pre-processing, Handling of untitled articles, Green articles extraction, Topic modeling, Wrote the report + Readme updates
+- Mathilde Guillaumot: Data pre-processing, Handling of untitled articles, Green articles extraction and analysis, Topic modeling, Wrote the report + Readme updates (Will be presenting the poster)
 
 - Priscille Guerrier de Dumast: "green" words matching list and means to retrieve green articles
 
