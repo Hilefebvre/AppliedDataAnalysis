@@ -64,27 +64,44 @@ Once the pre-processing will be considered optimal we have two main objectives:
 
 ### Milestone 3
 
+From Milestone 2, we have determine a list of steps to perform to get to good topic modeling:
+- Step 1: How many untitled articles over time and total are there in the datasets? After having dealt with this question, we can choose a strategy to deal with untitled articles
+- Step 2: Grow our taxomony list of words to extract "green" articles from the dataset
+- Step 3: Filter "green" articles by title and then retrieve full content
+- Step 4: Statistics on extracted articles (problem need to be qualified and quantified)
+- Step 5: Perform topic modeling
 
+Step 1: 
 
-Following the comments of the TA, we established at first a list of almost 200 key words from the ecological lexical. We decided to limit ourselves with only 58 words because of the amount of data to process and the rarity of their use in the french language. 21 words out of these 58 ones were retrieved in one or both of the journals (GDL and JDG):
+Regarding the amount of untitled articles, we could not just drop them out of our dataset. Fortunately, it appeared that very frequently the main topics treated in the article were mentioned at the very beginning of the article content so we matched our list of words with the 100 first characters of each untitled articles with pretty good results even if only less than 100 hundred articles for each journal were retrieved it is always articles that needed to be present in our processed dataset despite missing a title.
+
+Step 2:
+
+We established at first a list of almost 200 key words from the ecological lexical. We decided to limit ourselves with only 58 words because of the rarity of their use in the french language and the amount of data to process. 21 words out of these 58 ones were retrieved in one or both of the journals (GDL and JDG):
 
 ’agriculture durable’, ’biodiversité’,’biodégradable’, ’biomasse’, ’biotope’, ’biozone’,’changement climatique’, ’climax’,’compostage’,’diversité’, biologique’, ’déforestation’, ’environnement’,’environnemental’, ’espace vert’, ’gaz à effet de serre’, ’micro-climat’, ’reboisement’,’réchauffement climatique’, ’réchauffement global’, 'écologie', 'écotaxe'
 
+Step 3: 
+
 This time we used the "re" package and its search fonction to fully match words and avoid mistakes such as "écologie/gynécologie" like we got previously. After what, we extracted the articles matching one of the "green" words.
+Again, based on the amount of data we had at our disposal we retrieved "green" articles full text from our lists of articles titles which matched words in our 58 words long list defined. 
 
-Regarding the amount of untitled articles, we could not just drop them from our dataset. Fortunately, it appeared that very frequently the main topic treated in the article was mentioned at the very beginning of the article content so we matched our list of words with the 100 first characters of each untitled articles with pretty good results even so only less than 100 hundred articles for each journal were retrieved it is always articles that needed to be present in our processed dataset despite missing a title. We noticed that the two main represented words were "environnement" and "écologie" which could be expected. What's interesting is that these two words distributions in the two journals are really similar. This may indicate that ecology is covered by the two journal in the same way which is not unreasonable since the two newspapers should cover the same local news due to their proximity.
+Step 4: 
 
+We noticed that the two main represented words were "environnement" and "écologie" which could be expected. We had to verify that the predominance of the word "environnement" was not due to its massive use in several contexts but appeared that it was indeed mostly related to "green" subjects and topic modeling proved that it did not bring too much bias keeping the eventual articles not related to "green" subjects but mentioning the word "environnement". What is interesting is that these two words distributions in both journals are really similar. This may indicate that ecology is covered by the two journals in the same way which is not unreasonable since the two newspapers should cover the same local news due to their geographical proximity.
 The time period that is mostly concerned with these "green" subjects seem to be 1982-1992 which would coincide with global green awareness and with some ecological disaster (such as Tchernobyl).
+
+Step 5: 
+
+Topic modeling has enable us to portray what were the association between topics learnt and the categories of articles retrieved by a specific "green" word. It also showed that our analysis assumptions were acceptable as the topics extracted from our data related to "green" topics. The top words of the topics learnt also got to tell more about the themes that were associated with one category of "green" subject. 
 
 Regarding work split, we did as following:
 
-- Mathilde Guillaumot: Data pre-processing, Handling of untitled articles, Green articles extraction, Topic modeling, Mastered the report.
+- Mathilde Guillaumot: Data pre-processing, Handling of untitled articles, Green articles extraction, Topic modeling, wrote the report + readme updates
 
 - Priscille Guerrier de Dumast: "green" words matching list and means to retrieve green articles
 
-- Hippolyte Lefebvre: Selection and processing of keywords and full list matching with the two datasets with extraction of match words.
-
-
+- Hippolyte Lefebvre: Selection and processing of keywords and full list matching with the two datasets with extraction of match words, readme updates
 
 
 # Questions for TAs
